@@ -2,7 +2,6 @@
   $q = $_GET["q"];
   $go = [];
   if ($q == "school"){
-    array_push($text, 'n{"b":"Redirecting you to HBMS Schoology...", "t":"Redirecting..", "img":["https://p4.zdassets.com/hc/theme_assets/958824/200230227/contact.png"], "clr":"darkblue"}');
     array_push($go, "https://laketravis.schoology.com/login/ldap?school=17707999");
   } elseif ($q == "") {
     array_push($go, "https://aeio.io");
