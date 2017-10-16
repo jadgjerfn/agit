@@ -37,8 +37,8 @@ drun = (cmd) ->
 
   $.get "q?&q=" + cmd, (data) ->
     data = JSON.parse data
-    for x in [0...data.text.length] by 1
-      notify data.text[x].substr 1 if data.text[x]["0"] is "n"
+    #  for x in [0...data.text.length] by 1
+    #    notify data.text[x].substr 1 if data.text[x]["0"] is "n"
     for x in [0...data.go.length] by 1
       if x is data.go.length - 1
         location.href = data.go[x]
