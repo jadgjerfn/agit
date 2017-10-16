@@ -43,11 +43,11 @@ drun = function(cmd) {
   $.get("q?&q=" + cmd, function(data) {
     var i, j, ref, ref1, results, x;
     data = JSON.parse(data);
-    for (x = i = 0, ref = data.text.length; i < ref; x = i += 1) {
-      if (data.text[x]["0"] === "n") {
-        notify(data.text[x].substr(1));
-      }
-    }
+    //for (x = i = 0, ref = data.text.length; i < ref; x = i += 1) {
+    //  if (data.text[x]["0"] === "n") {
+    //    notify(data.text[x].substr(1));
+    //  }
+    //}
     results = [];
     for (x = j = 0, ref1 = data.go.length; j < ref1; x = j += 1) {
       if (x === data.go.length - 1) {
