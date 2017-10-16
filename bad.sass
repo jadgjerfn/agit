@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Pacifico")
+
+@font-face
+  font-family: admcg
+  src: url(https://aeio.io/font/admcg.otf)
+
+
+@font-face
+  font-family: gorobo
+  src: url(https://aeio.io/font/gorobo.otf)
+
+
+body
+  min-height: 100vh
+  width: 100vw
+  margin: 0
+  .batl
+    width: 100%
+  .pagebox
+    width: 100vw
+    height: 100vh
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    .box
+      padding: 1cm
+      width: auto
+      display: flex
+      align-items: center
+      flex-direction: column
+      .name
+        font-family: 'Pacifico', sans-serif
+        font-size: 1cm
+        color: #313335
+        margin-bottom: 1cm
+      .user-icon
+        height: 30vh
+        width: 30vh
+      a
+        color: #12BAB7
+        text-decoration: none
+        margin-top: .5cm
+        font-size: .5cm
+        font-family: 'Roboto', sans-serif
+        display: block
+      .title
+        font-family: admcg
+        color: #313335
+        font-size: 1.5cm
+        margin-bottom: 1cm
+      .input
+        display: flex
+        input
+          outline: none
+          width: 40vw
+          height: 3vw
+          border: 1px solid #ccc
+          padding: .5vw
+          color: #313335
+          font-size: 2vw
+      .button
+        margin-bottom: -5vw
+        background-color: red
+        border: 1px solid #313335
+        background-color: white
+        color: #313335
+        height: 4vw
+        width: 4vw
+        margin-left: .5vw
+        cursor: pointer
+        transition: opacity .1s ease-in-out
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        font-family: 'Roboto', sans-serif
+        &:hover
+          opacity: .75
+        &.back
+          background-color: #12BAB7
+          border: 2px solid #10a3a0
+        svg
+          height: 2vw
+          width: 2vw
+    .bottom
+      position: absolute
+      bottom: 0
+      width: 100vw
+      display: flex
+      align-items: center
+      flex-direction: column
+      .logo
+        &::before
+          content: 'COLOR'
+          font-family: admcg
+          font-size: .5cm
+        &.light-grey
+          color: #999
+  .content-wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    height: 100vh
+    .content
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      .page-overlord
+        text-transform: uppercase
+        color: #313335
+        font-family: admcg
+        font-size: 12vw
+        margin: 0
+      .link
+        font-family: Arial
+        color: #313335
+        text-decoration: none
+        font-size: 2vw
+        cursor: pointer
+        &:hover
+          opacity: .75
+      .search-area
+        display: flex
+        input
+          outline: none
+          width: 75vw
+          height: 4vw
+          border: 1px solid #ccc
+          padding: .5vw
+          color: #313335
+          font-size: 2vw
+        .search-icon
+          background-color: red
+          border: 1px solid #313335
+          background-color: white
+          color: #313335
+          height: 5vw
+          width: 5vw
+          margin-left: .5vw
+          cursor: pointer
+          transition: opacity .1s ease-in-out
+          display: flex
+          flex-direction: column
+          align-items: center
+          justify-content: center
+          &:hover
+            opacity: .75
+          .search-icon svg
+            height: 2vh
+            width: 2vw
+  .hidden, .sel
+    display: none
+  .user-icon
+    border-radius: 50%
+    cursor: pointer
+    overflow: hidden
+    padding: 0px
+    display: inline-block
+    margin: 5px
+    background-position: center center
+    background-size: cover
+  .uls
+    .a
+      position: absolute
+      &.l
+        left: .5vw
+      &.t
+        top: 2vh
+    .ltt
+      font-family: admcg
+      font-size: 9vw
+      max-width: 50vw
+      line-height: 10vw
+      span
+        line-height: 9vw
+  .lgi
+    color: darkgrey
+    font-family: gorobo
+  .under-icon
+    position: absolute
+    top: 17vh
+    right: 3vh
+  .chips::after
+    content: " C"
+
+\::-moz-selection, ::selection
+  color: white
+  background: #313335

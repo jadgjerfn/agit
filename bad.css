@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Pacifico");
+@font-face {
+  font-family: admcg;
+  src: url(https://aeio.io/font/admcg.otf);
+}
+
+@font-face {
+  font-family: gorobo;
+  src: url(https://aeio.io/font/gorobo.otf);
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+body .batl {
+  width: 100%;
+}
+
+body .pagebox {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body .pagebox .box {
+  padding: 1cm;
+  width: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+body .pagebox .box .name {
+  font-family: 'Pacifico', sans-serif;
+  font-size: 1cm;
+  color: #313335;
+  margin-bottom: 1cm;
+}
+
+body .pagebox .box .user-icon {
+  height: 30vh;
+  width: 30vh;
+}
+
+body .pagebox .box a {
+  color: #12BAB7;
+  text-decoration: none;
+  margin-top: .5cm;
+  font-size: .5cm;
+  font-family: 'Roboto', sans-serif;
+  display: block;
+}
+
+body .pagebox .box .title {
+  font-family: admcg;
+  color: #313335;
+  font-size: 1.5cm;
+  margin-bottom: 1cm;
+}
+
+body .pagebox .box .input {
+  display: flex;
+}
+
+body .pagebox .box .input input {
+  outline: none;
+  width: 40vw;
+  height: 3vw;
+  border: 1px solid #ccc;
+  padding: .5vw;
+  color: #313335;
+  font-size: 2vw;
+}
+
+body .pagebox .box .button {
+  margin-bottom: -5vw;
+  background-color: red;
+  border: 1px solid #313335;
+  background-color: white;
+  color: #313335;
+  height: 4vw;
+  width: 4vw;
+  margin-left: .5vw;
+  cursor: pointer;
+  transition: opacity .1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+body .pagebox .box .button:hover {
+  opacity: .75;
+}
+
+body .pagebox .box .button.back {
+  background-color: #12BAB7;
+  border: 2px solid #10a3a0;
+}
+
+body .pagebox .box .button svg {
+  height: 2vw;
+  width: 2vw;
+}
+
+body .pagebox .bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+body .pagebox .bottom .logo::before {
+  content: 'COLOR';
+  font-family: admcg;
+  font-size: .5cm;
+}
+
+body .pagebox .bottom .logo.light-grey {
+  color: #999;
+}
+
+body .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+body .content-wrapper .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body .content-wrapper .content .page-overlord {
+  text-transform: uppercase;
+  color: #313335;
+  font-family: admcg;
+  font-size: 12vw;
+  margin: 0;
+}
+
+body .content-wrapper .content .link {
+  font-family: Arial;
+  color: #313335;
+  text-decoration: none;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+body .content-wrapper .content .link:hover {
+  opacity: .75;
+}
+
+body .content-wrapper .content .search-area {
+  display: flex;
+}
+
+body .content-wrapper .content .search-area input {
+  outline: none;
+  width: 75vw;
+  height: 4vw;
+  border: 1px solid #ccc;
+  padding: .5vw;
+  color: #313335;
+  font-size: 2vw;
+}
+
+body .content-wrapper .content .search-area .search-icon {
+  background-color: red;
+  border: 1px solid #313335;
+  background-color: white;
+  color: #313335;
+  height: 5vw;
+  width: 5vw;
+  margin-left: .5vw;
+  cursor: pointer;
+  transition: opacity .1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body .content-wrapper .content .search-area .search-icon:hover {
+  opacity: .75;
+}
+
+body .content-wrapper .content .search-area .search-icon .search-icon svg {
+  height: 2vh;
+  width: 2vw;
+}
+
+body .hidden, body .sel {
+  display: none;
+}
+
+body .user-icon {
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 0px;
+  display: inline-block;
+  margin: 5px;
+  background-position: center center;
+  background-size: cover;
+}
+
+body .uls .a {
+  position: absolute;
+}
+
+body .uls .a.l {
+  left: .5vw;
+}
+
+body .uls .a.t {
+  top: 2vh;
+}
+
+body .uls .ltt {
+  font-family: admcg;
+  font-size: 9vw;
+  max-width: 50vw;
+  line-height: 10vw;
+}
+
+body .uls .ltt span {
+  line-height: 9vw;
+}
+
+body .lgi {
+  color: darkgrey;
+  font-family: gorobo;
+}
+
+body .under-icon {
+  position: absolute;
+  top: 17vh;
+  right: 3vh;
+}
+
+body .chips::after {
+  content: " C";
+}
+
+::-moz-selection {
+  color: white;
+  background: #313335;
+}
+
+::selection {
+  color: white;
+  background: #313335;
+}
