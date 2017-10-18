@@ -31,7 +31,7 @@ dscolor = function(ctc) {
   $(".search-icon").css({
     "border": "1px solid " + color
   });
-  $(".page-overlord span, .link").css({
+  $(".page-overlord, .link").css({
     "color": color
   });
   $(".search-icon svg")[0].setAttribute("fill", color);
